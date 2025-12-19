@@ -25,6 +25,10 @@ This workflow ensures every project starts and maintains the required documentat
      - Check for a **favicon** (link tag in `index.html` and existence of the file/data URI).
      - **Asset Separation**: Check if CSS and JS are inlined in `index.html` or separated into dedicated files (`style.css`, `main.js`).
      - **Cache Bursting**: Check if internal CSS/JS links use version query parameters (e.g., `?v=X.Y.Z`). **Skip external CDNs**.
+     - **Standardized Footer**: Check if `index.html` contains the standardized footer with:
+       - Version string (e.g., `v1.0.0`).
+       - Links to `README` and `CHANGELOG` via `md-viewer` (e.g., `https://kuancheen.github.io/md-viewer/?...`).
+       - Copyright notice linking to the author's GitHub profile.
    - **Automation Check (Sync with Global)**:
      - Check if `.agent/workflows/version-update.md` exists. **Verify if it matches the latest global version**.
      - Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
@@ -129,6 +133,18 @@ This workflow ensures every project starts and maintains the required documentat
        - Copyright year
      - **Version String**: If `index.html` exists, add version string (e.g., `App Version: v0.0.1 (Beta)`).
      - **Favicon**: Add a relevant SVG favicon. Use a data URI for simplicity or create a separate `favicon.svg` file and link it in `index.html`.
+     - **Standardized Footer**: Add a footer to `index.html` with the following format:
+       ```html
+       <footer>
+           <p>
+               vX.Y.Z | 
+               <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/README.md" target="_blank">README</a> | 
+               <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/CHANGELOG.md" target="_blank">CHANGELOG</a> | 
+               &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a>
+           </p>
+       </footer>
+       ```
+       - Replace `:owner`, `:repo`, and `:author` with the correct values.
      - Add copyright notice in footer or meta tags.
    - Ensure consistent branding across files.
 

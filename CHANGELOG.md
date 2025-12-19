@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automated README badge updates in `/version-update` (Version and Status)
 - Logic to transition project status from "Beta" to "Live/Production" during version updates
 
+## [1.7.0] - 2025-12-19
+
+### Added
+- Standardized footer requirement for web applications in `/new-project-init`
+- Integration with [MD-Viewer](https://kuancheen.github.io/md-viewer/) for viewing `README.md` and `CHANGELOG.md` directly from the app footer
+- Copyright notice in footer linking to the author's GitHub profile
+
 ## [1.6.1] - 2025-12-19
 
 ### Fixed
