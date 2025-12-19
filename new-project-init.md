@@ -23,6 +23,8 @@ This workflow ensures every project starts and maintains the required documentat
      - Check if `index.html` has the required **HTML Comment Header** (Author, Description, App Name, Year).
      - Check if `index.html` has a version string.
      - Check for a **favicon** (link tag in `index.html` and existence of the file/data URI).
+     - **Asset Separation**: Check if CSS and JS are inlined in `index.html` or separated into dedicated files (`style.css`, `main.js`).
+     - **Cache Bursting**: Check if internal CSS/JS links use version query parameters (e.g., `?v=X.Y.Z`). **Skip external CDNs**.
    - **Automation Check (Sync with Global)**:
      - Check if `.agent/workflows/version-update.md` exists. **Verify if it matches the latest global version**.
      - Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
@@ -31,6 +33,8 @@ This workflow ensures every project starts and maintains the required documentat
    - List all missing required files or **missing badges** in README.
    - Identify files that don't follow the latest standards (e.g., hardcoded years, missing headers).
    - Identify missing or generic **favicons** in web projects.
+   - Identify **inlined assets** that should be moved to separate files.
+   - Identify **missing cache bursting filters** for internal assets.
    - Identify **outdated local workflows** that should be replaced with the latest versions from the global workspace.
    - Note any version inconsistencies (recommend `v0.0.1 (Beta)` if early stage).
 
@@ -38,7 +42,7 @@ This workflow ensures every project starts and maintains the required documentat
    - Provide a clear list of recommended changes to bring the project into compliance.
    - Offer to:
      - Create missing files.
-     - Update non-compliant files (including adding missing badges).
+     - Update non-compliant files (including adding badges, separating assets, and adding cache bursting).
      - **Sync/Replace Local Workflows**: Offer to replace existing local `version-update.md` or `static.yml` with the latest versions from the global workspace.
      - **Add GitHub Actions**: Offer to add `static.yml` for web projects if missing.
    - **Request user confirmation** before making any changes.
@@ -114,6 +118,8 @@ This workflow ensures every project starts and maintains the required documentat
 
 8. **Update Project Files**:
    - **For web apps only**:
+     - **Asset Separation**: Always separate CSS and JS into `style.css` and `main.js` files. Link them in `index.html`.
+     - **Cache Bursting**: Add version-based query parameters to **internal** asset links (e.g., `href="style.css?v=0.0.1 (Beta)"`).
      - **HTML Comment Header**: Add a comment block at the very top of `index.html` including:
        - Application Name
        - Brief description of the application

@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automated README badge updates in `/version-update` (Version and Status)
 - Logic to transition project status from "Beta" to "Live/Production" during version updates
 
+## [1.6.0] - 2025-12-19
+
+### Added
+- Enforcement of clean asset separation (moving inlined CSS/JS to external files) in `/new-project-init`
+- Automated cache bursting for internal CSS and JS files using version query parameters
+- Cache bursting updates integrated into the `/version-update` workflow
+
 ## [1.5.0] - 2025-12-19
 
 ### Added

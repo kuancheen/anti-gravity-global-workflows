@@ -1,8 +1,8 @@
-# Google Anti-Gravity Global Workflows (v1.5.0)
+# Google Anti-Gravity Global Workflows (v1.6.0)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
-![Version](https://img.shields.io/badge/version-v1.5.0-blue)
+![Version](https://img.shields.io/badge/version-v1.6.0-blue)
 [![Status](https://img.shields.io/badge/status-active-success)](https://github.com/kuancheen/anti-gravity-global-workflows)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://github.com/kuancheen/anti-gravity-global-workflows)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kuancheen/anti-gravity-global-workflows/blob/main/LICENSE)
@@ -80,6 +80,8 @@ git push origin main
 - ✅ Initializes Git repository with `.gitignore`.
 - ✅ Creates GitHub repository with **name confirmation** and **auth pre-checks**.
 - ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional).
+- ✅ **Favicon & Cache Bursting**: Generates relevant favicons and implements cache bursting for internal assets.
+- ✅ **Asset Separation**: Enforces moving inlined CSS and JS into separate `style.css` and `main.js` files.
 - ✅ **Automates Pages Source**: Sets Pages build source to GitHub Actions via API.
 - ✅ Sets up **local workspace workflows** by copying global templates.
 - ✅ Generates `README.md` with **standardized badges**, `CHANGELOG.md`, and `LICENSE` following the latest standards.
@@ -103,6 +105,7 @@ git push origin main
 **What it does**:
 - 🔍 Analyzes changes to determine version bump (Major/Minor/Patch)
 - 📝 Updates version in `index.html` (web apps only)
+- 🚀 **Updates Cache Bursting**: Automatically increments version query parameters on internal asset links.
 - 📋 Updates `CHANGELOG.md` with new version entry
 - 📖 **Updates README.md** references and **standardized badges** (Version, Status).
 - ©️ Updates copyright year if needed
@@ -215,5 +218,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.5.0  
+**Version**: 1.6.0  
 **Maintained by**: Google Anti-Gravity Team

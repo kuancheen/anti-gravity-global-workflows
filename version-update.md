@@ -44,6 +44,7 @@ Automatically run this workflow after:
    - **Note**: This step only applies to web applications with an `index.html` file
    - Find the version string (e.g., `App Version: v1.7.1`)
    - Increment it according to the analysis from step 1
+   - **Update Cache Bursting**: Find all **internal** CSS and JS links and update their version query parameters (e.g., `style.css?v=1.0.0` -> `style.css?v=1.1.0`) to match the new version. **Do not update external CDNs**.
    - Update the version in any meta tags or headers
    - Skip this step if the project is not a web app
 
