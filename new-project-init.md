@@ -110,6 +110,8 @@ This workflow ensures every project starts and maintains the required documentat
    - **Automate Pages Source**:
      - After creating the workflow, explicitly set the GitHub Pages build source to "GitHub Actions" via API:
        `gh api -X PATCH repos/:owner/:repo/pages -f build_type=workflow`
+     - **Verification**: Run `gh api repos/:owner/:repo/pages` to verify `build_type` is `workflow`.
+     - **Note**: This call may fail if the repository has no commits yet. If it fails, proceed to Step 10 and try again there.
      - **Fallback**: If the API call fails or CLI is not authenticated, use the **Browser Tool** to navigate to `Settings > Pages` and set the source to "GitHub Actions".
 
 7. **Setup Local Workflows**:
