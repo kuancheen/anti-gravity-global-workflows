@@ -1,4 +1,4 @@
-# Google Anti-Gravity Global Workflows (v1.0.1)
+# Google Anti-Gravity Global Workflows (v1.1.0)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
@@ -74,7 +74,9 @@ git push origin main
 - ✅ **Reviews existing projects** for compliance with workflow standards
 - ✅ Recommends changes for non-compliant projects
 - ✅ Initializes Git repository with `.gitignore`
-- ✅ Creates GitHub repository
+- ✅ Creates GitHub repository with **name confirmation**
+- ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional for web apps)
+- ✅ Sets up **local workspace workflows** by copying global templates
 - ✅ Generates `README.md` with project structure
 - ✅ Creates `CHANGELOG.md` following [Keep a Changelog](https://keepachangelog.com/) format
 - ✅ Adds `LICENSE` file with copyright
@@ -276,5 +278,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-16  
-**Version**: 1.0.1  
+**Version**: 1.1.0  
 **Maintained by**: Google Anti-Gravity Team
