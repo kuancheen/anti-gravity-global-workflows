@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automated README badge updates in `/version-update` (Version and Status)
 - Logic to transition project status from "Beta" to "Live/Production" during version updates
 
+## [1.5.0] - 2025-12-19
+
+### Added
+- Favicon auditing and automated setup for web applications in `/new-project-init`
+- Support for SVG-based favicons (data URIs or separate files)
+
 ## [1.3.1] - 2025-12-19
 
 ### Changed

@@ -22,6 +22,7 @@ This workflow ensures every project starts and maintains the required documentat
    - **For web apps**:
      - Check if `index.html` has the required **HTML Comment Header** (Author, Description, App Name, Year).
      - Check if `index.html` has a version string.
+     - Check for a **favicon** (link tag in `index.html` and existence of the file/data URI).
    - **Automation Check (Sync with Global)**:
      - Check if `.agent/workflows/version-update.md` exists. **Verify if it matches the latest global version**.
      - Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
@@ -29,6 +30,7 @@ This workflow ensures every project starts and maintains the required documentat
 2. **Identify Missing or Outdated Elements**:
    - List all missing required files or **missing badges** in README.
    - Identify files that don't follow the latest standards (e.g., hardcoded years, missing headers).
+   - Identify missing or generic **favicons** in web projects.
    - Identify **outdated local workflows** that should be replaced with the latest versions from the global workspace.
    - Note any version inconsistencies (recommend `v0.0.1 (Beta)` if early stage).
 
@@ -118,6 +120,7 @@ This workflow ensures every project starts and maintains the required documentat
        - Author Name
        - Copyright year
      - **Version String**: If `index.html` exists, add version string (e.g., `App Version: v0.0.1 (Beta)`).
+     - **Favicon**: Add a relevant SVG favicon. Use a data URI for simplicity or create a separate `favicon.svg` file and link it in `index.html`.
      - Add copyright notice in footer or meta tags.
    - Ensure consistent branding across files.
 
