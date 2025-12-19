@@ -59,6 +59,10 @@ Automatically run this workflow after:
 
 4. **Update README.md**:
    - Update the version number in the title/header (e.g., `# Project Name (v1.7.1)`)
+   - **Update Version Badge**: Update the `![Version]` badge to reflect the new version number.
+   - **Update Status Badge (Optional)**:
+     - Check if the project is moving from "Beta" to "Live/Production".
+     - If yes, update the `![Status]` badge (e.g., `status-active-success`) and remove any "(Beta)" suffixes from the version string.
    - Update any relevant instructions if the changes affect usage
    - Update screenshots or examples if UI/UX has changed
 

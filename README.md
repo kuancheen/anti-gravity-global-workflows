@@ -1,8 +1,8 @@
-# Google Anti-Gravity Global Workflows (v1.3.1)
+# Google Anti-Gravity Global Workflows (v1.4.0)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
-![Version](https://img.shields.io/badge/version-v1.3.1-blue)
+![Version](https://img.shields.io/badge/version-v1.4.0-blue)
 [![Status](https://img.shields.io/badge/status-active-success)](https://github.com/kuancheen/anti-gravity-global-workflows)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://github.com/kuancheen/anti-gravity-global-workflows)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kuancheen/anti-gravity-global-workflows/blob/main/LICENSE)
@@ -104,7 +104,7 @@ git push origin main
 - 🔍 Analyzes changes to determine version bump (Major/Minor/Patch)
 - 📝 Updates version in `index.html` (web apps only)
 - 📋 Updates `CHANGELOG.md` with new version entry
-- 📖 Updates `README.md` version references
+- 📖 **Updates README.md** references and **standardized badges** (Version, Status).
 - ©️ Updates copyright year if needed
 - 🏷️ Creates Git commit and optional version tag
 - 🚀 Pushes to GitHub (with user confirmation)
@@ -215,5 +215,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.3.1  
+**Version**: 1.4.0  
 **Maintained by**: Google Anti-Gravity Team
