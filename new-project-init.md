@@ -138,7 +138,11 @@ This workflow ensures every project starts and maintains the required documentat
 
 10. **Initial Commit and Push to GitHub**:
     - Add remote: `git remote add origin <repository-url>`.
+    - **Final Pages Source Check**: For web apps, try setting the Pages source to "Actions" again via API *now* that the remote is established.
     - Stage all files: `git add .`.
     - Create initial commit: `git commit -m "chore: initial project setup with documentation"`.
     - **Request user confirmation before pushing**.
     - After confirmation, push to GitHub: `git push -u origin main`.
+    - **Post-Push Verification**:
+      - Wait 10 seconds, then check if the Pages deployment action starts.
+      - If the action fails with a 404 or "Pages not configured" error, re-run the `gh api` command to set the source and manually trigger the action again.

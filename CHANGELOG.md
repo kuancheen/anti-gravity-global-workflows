@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automated README badge updates in `/version-update` (Version and Status)
 - Logic to transition project status from "Beta" to "Live/Production" during version updates
 
+## [1.6.1] - 2025-12-19
+
+### Fixed
+- Fixed a race condition in `/new-project-init` where GitHub Pages deployment would fail (404) if the source was not set to "Actions" before the initial push.
+- Added explicit verification and re-configuration steps for GitHub Pages source.
+
 ## [1.6.0] - 2025-12-19
 
 ### Added
