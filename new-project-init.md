@@ -22,13 +22,14 @@ This workflow ensures every project starts and maintains the required documentat
    - **For web apps**:
      - Check if `index.html` has the required **HTML Comment Header** (Author, Description, App Name, Year).
      - Check if `index.html` has a version string.
-   - **Automation Check**:
-     - Check if `.agent/workflows/version-update.md` exists (Local Workflow).
-     - Check if `.github/workflows/static.yml` exists if it's a web app.
+   - **Automation Check (Sync with Global)**:
+     - Check if `.agent/workflows/version-update.md` exists. **Verify if it matches the latest global version**.
+     - Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
 
-2. **Identify Missing or Non-Compliant Elements**:
+2. **Identify Missing or Outdated Elements**:
    - List all missing required files.
    - Identify files that don't follow the latest standards (e.g., hardcoded years, missing headers).
+   - Identify **outdated local workflows** that should be replaced with the latest versions from the global workspace.
    - Note any version inconsistencies (recommend `v0.0.1 (Beta)` if early stage).
 
 3. **Recommend Changes and Fixes**:
@@ -36,12 +37,12 @@ This workflow ensures every project starts and maintains the required documentat
    - Offer to:
      - Create missing files.
      - Update non-compliant files.
-     - **Setup Local Workflows**: Offer to copy the global `version-update.md` to `.agent/workflows/`.
-     - **Add GitHub Actions**: Offer to add `static.yml` for web projects.
+     - **Sync/Replace Local Workflows**: Offer to replace existing local `version-update.md` or `static.yml` with the latest versions from the global workspace.
+     - **Add GitHub Actions**: Offer to add `static.yml` for web projects if missing.
    - **Request user confirmation** before making any changes.
 
 4. **After User Confirms**:
-   - Proceed with creating/updating files as needed.
+   - Proceed with creating/updating/replacing files as needed.
    - Continue with relevant steps below if the project also requires a new repository or initial commit.
 
 ---

@@ -1,4 +1,4 @@
-# Google Anti-Gravity Global Workflows (v1.2.1)
+# Google Anti-Gravity Global Workflows (v1.2.2)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
@@ -72,7 +72,8 @@ git push origin main
 
 **What it does**:
 - ✅ **Compliance Audit**: Reviews existing projects for required files, headers, and automation.
-- ✅ **Auto-Fix Recommendations**: Offers to create missing files, update headers, and copy local workflows.
+- ✅ **Workflow Synchronization**: Verifies if local automation files match the latest global versions.
+- ✅ **Auto-Fix Recommendations**: Offers to create missing files, update headers, and **replace** outdated workflows with global templates.
 - ✅ Initializes Git repository with `.gitignore`.
 - ✅ Creates GitHub repository with **name confirmation** and **auth pre-checks**.
 - ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional).
@@ -84,7 +85,7 @@ git push origin main
 
 **When to use**: 
 - Starting any new Google Anti-Gravity project.
-- **Reviewing an existing project** (especially older ones) for compliance with workflow standards.
+- **Reviewing an existing project** (especially older ones) for compliance and workflow updates.
 
 **How to use**: Type `/new-project-init` in any project directory.
 
@@ -210,5 +211,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.2.1  
+**Version**: 1.2.2  
 **Maintained by**: Google Anti-Gravity Team
