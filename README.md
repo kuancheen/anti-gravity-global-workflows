@@ -1,8 +1,10 @@
-# Google Anti-Gravity Global Workflows (v1.2.2)
+# Google Anti-Gravity Global Workflows (v1.3.0)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Version](https://img.shields.io/badge/version-v1.3.0-blue)
+[![Status](https://img.shields.io/badge/status-active-success)](https://github.com/kuancheen/anti-gravity-global-workflows)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kuancheen/anti-gravity-global-workflows/blob/main/LICENSE)
 [![Semantic Versioning](https://img.shields.io/badge/semver-2.0.0-blue)](https://semver.org/)
 
 ## 📋 Table of Contents
@@ -71,15 +73,15 @@ git push origin main
 **Purpose**: Automatically sets up a new project OR audits an existing project for compliance with latest global workflow standards.
 
 **What it does**:
-- ✅ **Compliance Audit**: Reviews existing projects for required files, headers, and automation.
+- ✅ **Compliance Audit**: Reviews existing projects for required files, headers, badges, and automation.
 - ✅ **Workflow Synchronization**: Verifies if local automation files match the latest global versions.
-- ✅ **Auto-Fix Recommendations**: Offers to create missing files, update headers, and **replace** outdated workflows with global templates.
+- ✅ **Auto-Fix Recommendations**: Offers to create missing files, update headers, add badges, and **replace** outdated workflows with global templates.
 - ✅ Initializes Git repository with `.gitignore`.
 - ✅ Creates GitHub repository with **name confirmation** and **auth pre-checks**.
 - ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional).
 - ✅ **Automates Pages Source**: Sets Pages build source to GitHub Actions via API.
 - ✅ Sets up **local workspace workflows** by copying global templates.
-- ✅ Generates `README.md`, `CHANGELOG.md`, and `LICENSE` following the latest standards.
+- ✅ Generates `README.md` with **standardized badges**, `CHANGELOG.md`, and `LICENSE` following the latest standards.
 - ✅ Sets up initial version (**v0.0.1 (Beta)**).
 - ✅ Commits and pushes to GitHub (with user confirmation).
 
@@ -128,6 +130,7 @@ Every Google Anti-Gravity project must include:
 
 ### `README.md`
 - Project title with version number (starting at `v0.0.1 (Beta)`).
+- **Standardized Badges**: Version, Status, (Live Demo), License, Semantic Versioning.
 - Description and purpose.
 - Installation/setup instructions.
 - Usage examples.
@@ -181,7 +184,7 @@ All workflows include GitHub integration:
 
 ## 🚀 Best Practices
 
-1. **Perform Compliance Audits Regularly**: Run `/new-project-init` in existing projects to ensure they have the latest workflows and headers.
+1. **Perform Compliance Audits Regularly**: Run `/new-project-init` in existing projects to ensure they have the latest workflows, headers, and badges.
 2. **Always confirm changes** before the agent proceeds with version updates.
 3. **Review CHANGELOG entries** to ensure accuracy.
 4. **Use descriptive commit messages** following conventional commits.
@@ -211,5 +214,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.2.2  
+**Version**: 1.3.0  
 **Maintained by**: Google Anti-Gravity Team

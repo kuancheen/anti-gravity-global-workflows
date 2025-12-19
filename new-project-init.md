@@ -12,10 +12,10 @@ This workflow ensures every project starts and maintains the required documentat
 
 1. **Review Current Project Structure**:
    - Check if `README.md` exists and contains:
-     - Project title with version number
-     - Description and purpose
-     - Installation/setup instructions
-     - License and copyright information
+     - Project title with version number and **required badges**.
+     - Description and purpose.
+     - Installation/setup instructions.
+     - License and copyright information.
    - Check if `CHANGELOG.md` exists and follows Keep a Changelog format.
    - Check if `LICENSE` file exists with proper copyright.
    - Check if `.gitignore` exists.
@@ -27,7 +27,7 @@ This workflow ensures every project starts and maintains the required documentat
      - Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
 
 2. **Identify Missing or Outdated Elements**:
-   - List all missing required files.
+   - List all missing required files or **missing badges** in README.
    - Identify files that don't follow the latest standards (e.g., hardcoded years, missing headers).
    - Identify **outdated local workflows** that should be replaced with the latest versions from the global workspace.
    - Note any version inconsistencies (recommend `v0.0.1 (Beta)` if early stage).
@@ -36,7 +36,7 @@ This workflow ensures every project starts and maintains the required documentat
    - Provide a clear list of recommended changes to bring the project into compliance.
    - Offer to:
      - Create missing files.
-     - Update non-compliant files.
+     - Update non-compliant files (including adding missing badges).
      - **Sync/Replace Local Workflows**: Offer to replace existing local `version-update.md` or `static.yml` with the latest versions from the global workspace.
      - **Add GitHub Actions**: Offer to add `static.yml` for web projects if missing.
    - **Request user confirmation** before making any changes.
@@ -66,6 +66,12 @@ This workflow ensures every project starts and maintains the required documentat
 
 3. **Create README.md**:
    - Add project title with initial version (v0.0.1 (Beta)).
+   - **Add Standard Badges**: Include the following badges at the very top, below the title:
+     - **Version**: `![Version](https://img.shields.io/badge/version-v0.0.1%20(Beta)-blue)`
+     - **License**: `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)` (or appropriate for the license chosen)
+     - **Semantic Versioning**: `![Semantic Versioning](https://img.shields.io/badge/semver-2.0.0-blue)`
+     - **Status**: `![Status](https://img.shields.io/badge/status-active-success)` (for active development)
+     - **Live Demo (Web Apps Only)**: `![Live Demo](https://img.shields.io/badge/demo-online-green.svg)` linking to the GitHub Pages URL.
    - Include project description and purpose.
    - Add installation/setup instructions.
    - Include usage examples.
@@ -116,7 +122,7 @@ This workflow ensures every project starts and maintains the required documentat
    - Ensure consistent branding across files.
 
 9. **Verify Documentation**:
-   - Check that all required files are created (README.md, CHANGELOG.md, LICENSE).
+   - Check that all required files and badges are created.
    - Ensure version numbers are consistent (v0.0.1 (Beta)).
    - Verify copyright year is correct (current year).
    - Review that all documentation is accurate and complete.
