@@ -29,6 +29,7 @@ This workflow ensures every project starts and maintains the required documentat
        - Version string (e.g., `v1.0.0`).
        - Links to `README` and `CHANGELOG` via `md-viewer` (e.g., `https://kuancheen.github.io/md-viewer/?...`).
        - Copyright notice linking to the author's GitHub profile.
+       - **Hits.sh Badge** view counter.
    - **Automation Check (Sync with Global)**:
      - Check if `.agent/workflows/version-update.md` exists. **Verify if it matches the latest global version**.
      - Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
@@ -140,7 +141,8 @@ This workflow ensures every project starts and maintains the required documentat
                vX.Y.Z | 
                <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/README.md" target="_blank">README</a> | 
                <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/CHANGELOG.md" target="_blank">CHANGELOG</a> | 
-               &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a>
+               &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a> |
+               <img src="https://hits.sh/github.com/:owner/:repo.svg?view=today-total&style=for-the-badge&label=👁️%20Views&extraCount=0&color=6366f1" alt="Hits">
            </p>
        </footer>
        ```
