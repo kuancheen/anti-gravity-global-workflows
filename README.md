@@ -1,4 +1,4 @@
-# Google Anti-Gravity Global Workflows (v1.1.1)
+# Google Anti-Gravity Global Workflows (v1.1.2)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
@@ -207,9 +207,9 @@ All workflows include GitHub integration:
 
 Copyright years are automatically managed:
 
-- **Project creation year**: 2025
-- **Current year = 2025**: Copyright shows `2025`
-- **Current year > 2025**: Copyright shows `2025-[Current Year]`
+- **Project creation year**: Uses the original year detected in project documentation.
+- **Current year > creation year**: Copyright shows `[Creation Year]-[Current Year]`
+- **Current year == creation year**: Copyright shows only the creation year.
 
 Updated in: `LICENSE`, `README.md`, and `index.html` (web apps)
 
@@ -280,5 +280,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.1.1  
+**Version**: 1.1.2  
 **Maintained by**: Google Anti-Gravity Team

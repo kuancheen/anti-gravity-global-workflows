@@ -63,11 +63,12 @@ Automatically run this workflow after:
    - Update screenshots or examples if UI/UX has changed
 
 5. **Check/Update Copyright Year**:
-   - Check the current year
-   - If `current_year > 2025` (project creation year):
-     - Update copyright notices in `LICENSE`, `README.md`, and `index.html`
-     - Format should be `2025-[Current Year]` (e.g., `2025-2026`)
-   - If `current_year == 2025`, ensure it says `2025`
+   - Check the current year.
+   - **Identify Project Creation Year**: Determine the original year from existing copyright notices in `LICENSE` or `README.md`.
+   - If `current_year > project_creation_year`:
+     - Update copyright notices in `LICENSE`, `README.md`, and `index.html`.
+     - Format should be `[Project Creation Year]-[Current Year]` (e.g., `2024-2025`).
+   - If `current_year == project_creation_year`, ensure it shows only the creation year.
 
 6. **Verify All Changes**:
    - Review all modified files
