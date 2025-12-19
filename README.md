@@ -1,4 +1,4 @@
-# Google Anti-Gravity Global Workflows (v1.1.2)
+# Google Anti-Gravity Global Workflows (v1.2.0)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
@@ -66,28 +66,26 @@ git push origin main
 
 ## 📋 Available Workflows
 
-### 1. New Project Initialization (`/new-project-init`)
+### 1. Project Setup and Compliance Audit (`/new-project-init`)
 
-**Purpose**: Automatically sets up a new project with all required documentation and GitHub integration.
+**Purpose**: Automatically sets up a new project OR audits an existing project for compliance with latest global workflow standards.
 
 **What it does**:
-- ✅ **Reviews existing projects** for compliance with workflow standards
-- ✅ Recommends changes for non-compliant projects
-- ✅ Initializes Git repository with `.gitignore`
-- ✅ Creates GitHub repository with **name confirmation**
-- ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional for web apps)
-- ✅ Sets up **local workspace workflows** by copying global templates
-- ✅ Generates `README.md` with project structure
-- ✅ Creates `CHANGELOG.md` following [Keep a Changelog](https://keepachangelog.com/) format
-- ✅ Adds `LICENSE` file with copyright
-- ✅ Sets up initial version (**v0.0.1 (Beta)**)
-- ✅ Commits and pushes to GitHub (with user confirmation)
+- ✅ **Compliance Audit**: Reviews existing projects for required files, headers, and automation.
+- ✅ **Auto-Fix Recommendations**: Offers to create missing files, update headers, and copy local workflows.
+- ✅ Initializes Git repository with `.gitignore`.
+- ✅ Creates GitHub repository with **name confirmation**.
+- ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional).
+- ✅ Sets up **local workspace workflows** by copying global templates.
+- ✅ Generates `README.md`, `CHANGELOG.md`, and `LICENSE` following the latest standards.
+- ✅ Sets up initial version (**v0.0.1 (Beta)**).
+- ✅ Commits and pushes to GitHub (with user confirmation).
 
 **When to use**: 
-- Starting any new Google Anti-Gravity project
-- Reviewing an existing project for compliance with workflow standards
+- Starting any new Google Anti-Gravity project.
+- **Reviewing an existing project** (especially older ones) for compliance with workflow standards.
 
-**How to use**: Type `/new-project-init` when creating a new project
+**How to use**: Type `/new-project-init` in any project directory.
 
 ---
 
@@ -108,11 +106,6 @@ git push origin main
 
 **When to use**: This workflow is **automatically triggered** by the agent after you confirm changes. You don't need to manually invoke it.
 
-**Automatic trigger conditions**:
-- After implementing new features, bug fixes, or changes
-- When user confirms the changes are ready
-- Before finalizing any update
-
 ---
 
 ## 🎯 Semantic Versioning Guide
@@ -132,27 +125,26 @@ All projects follow semantic versioning: `MAJOR.MINOR.PATCH`
 Every Google Anti-Gravity project must include:
 
 ### `README.md`
-- Project title with version number
-- Description and purpose
-- Installation/setup instructions
-- Usage examples
-- Features list
-- License and copyright information
+- Project title with version number (starting at `v0.0.1 (Beta)`).
+- Description and purpose.
+- Installation/setup instructions.
+- Usage examples.
+- Features list.
+- License and copyright information.
 
 ### `CHANGELOG.md`
-- Follows [Keep a Changelog](https://keepachangelog.com/) format
-- Documents all notable changes
-- Organized by version with dates
-- Categories: Added, Changed, Fixed, Removed, Security
+- Follows [Keep a Changelog](https://keepachangelog.com/) format.
+- Documents all notable changes.
+- Organized by version with dates.
 
 ### `LICENSE`
-- Appropriate license (MIT, Apache 2.0, GPL, etc.)
-- Copyright notice with current year
-- Full license text
+- Appropriate license (MIT, Apache 2.0, GPL, etc.).
+- Copyright notice with dynamic year detection.
 
-### `.gitignore`
-- Project-specific ignore patterns
-- Common patterns (node_modules, build dirs, env files)
+### `index.html` (Web Apps)
+- Author/Description comment block at the very top.
+- Version string (e.g., `App Version: v0.0.1 (Beta)`).
+- Copyright notice in footer or meta tags.
 
 ---
 
@@ -160,35 +152,18 @@ Every Google Anti-Gravity project must include:
 
 ### Starting a New Project
 
-1. Create project directory
-2. Agent automatically runs `/new-project-init`
-3. GitHub repository is created
-4. All documentation files are generated
-5. Initial commit is made and pushed (after your confirmation)
+1. Create project directory.
+2. Agent automatically runs `/new-project-init`.
+3. GitHub repository name is confirmed.
+4. All documentation files and local workflows are generated.
+5. Initial commit is made and pushed (after your confirmation).
 
 ### Making Changes to Existing Project
 
-1. Request feature/fix from agent
-2. Agent implements changes
-3. You review and confirm changes
-4. **Agent automatically runs version update workflow**:
-   - Determines version bump type
-   - Updates all relevant files
-   - Updates CHANGELOG with changes
-   - Commits and pushes to GitHub (after your confirmation)
-
----
-
-## 🎨 Project Types
-
-### Web Applications
-- Include `index.html` with version string (e.g., `App Version: v1.7.1`)
-- Version displayed in UI footer or meta tags
-- Copyright notice in HTML
-
-### Non-Web Projects
-- Version only in `README.md` and `CHANGELOG.md`
-- No `index.html` modifications
+1. Request feature/fix from agent.
+2. Agent implements changes.
+3. You review and confirm changes.
+4. **Agent automatically runs version update workflow**.
 
 ---
 
@@ -196,32 +171,18 @@ Every Google Anti-Gravity project must include:
 
 All workflows include GitHub integration:
 
-- **User Confirmation Required**: Agent will always request confirmation before pushing to GitHub
-- **Conventional Commits**: All commits follow conventional commit format
-- **Version Tags**: Optional Git tags for releases (e.g., `v1.5.3`)
-- **Remote Tracking**: Automatic setup of remote repository
-
----
-
-## 📝 Copyright Management
-
-Copyright years are automatically managed:
-
-- **Project creation year**: Uses the original year detected in project documentation.
-- **Current year > creation year**: Copyright shows `[Creation Year]-[Current Year]`
-- **Current year == creation year**: Copyright shows only the creation year.
-
-Updated in: `LICENSE`, `README.md`, and `index.html` (web apps)
+- **User Confirmation Required**: Agent will always request confirmation before pushing to GitHub.
+- **Conventional Commits**: All commits follow conventional commit format.
+- **Version Tags**: Optional Git tags for releases (e.g., `v1.5.3`).
 
 ---
 
 ## 🚀 Best Practices
 
-1. **Always confirm changes** before the agent proceeds with version updates
-2. **Review CHANGELOG entries** to ensure accuracy
-3. **Use descriptive commit messages** following conventional commits
-4. **Tag releases** for important versions
-5. **Keep documentation up-to-date** with actual functionality
+1. **Perform Compliance Audits Regularly**: Run `/new-project-init` in existing projects to ensure they have the latest workflows and headers.
+2. **Always confirm changes** before the agent proceeds with version updates.
+3. **Review CHANGELOG entries** to ensure accuracy.
+4. **Use descriptive commit messages** following conventional commits.
 
 ---
 
@@ -233,41 +194,9 @@ These workflows can be modified by editing the `.md` files in this directory:
 
 ---
 
-## 📚 References
-
-- [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
-- [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
-- [Conventional Commits](https://www.conventionalcommits.org/)
-
----
-
 ## 🤝 Contributing
 
-We welcome contributions to improve these workflows!
-
-### How to Contribute
-
-1. **Fork the repository**
-2. **Make your changes** following the workflow standards
-3. **Test your changes** in a real project
-4. **Update CHANGELOG.md** with your changes
-5. **Submit a pull request** with a clear description
-
-### Development Workflow
-
-1. Make changes to workflow files in this repository
-2. Test the workflows in a sample project
-3. Update documentation if needed
-4. Sync to global location:
-   ```bash
-   cp -r *.md /Users/kuancheen/.gemini/antigravity/workflows/
-   ```
-5. Commit and push:
-   ```bash
-   git add .
-   git commit -m "feat: description of changes"
-   git push origin main
-   ```
+We welcome contributions to improve these workflows! (See the `CHANGELOG.md` for our version history).
 
 ---
 
@@ -280,5 +209,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.1.2  
+**Version**: 1.2.0  
 **Maintained by**: Google Anti-Gravity Team

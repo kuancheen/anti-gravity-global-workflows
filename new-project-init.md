@@ -1,14 +1,14 @@
 ---
-description: Initialize a new project with required documentation files
+description: Initialize a new project or audit an existing one for compliance with workflow standards
 ---
 
-# New Project Initialization Workflow
+# Project Setup and Compliance Audit Workflow
 
-This workflow ensures every new project starts with the required documentation files and proper structure.
+This workflow ensures every project starts and maintains the required documentation files, proper structure, and automation workflows.
 
 ## When Invoked in Existing Workspace
 
-**IMPORTANT**: If this workflow is invoked in an **existing workspace** (not a new/empty project):
+**IMPORTANT**: If this workflow is invoked in an **existing workspace** (not a new/empty project), it functions as a **Compliance Audit**:
 
 1. **Review Current Project Structure**:
    - Check if `README.md` exists and contains:
@@ -16,33 +16,41 @@ This workflow ensures every new project starts with the required documentation f
      - Description and purpose
      - Installation/setup instructions
      - License and copyright information
-   - Check if `CHANGELOG.md` exists and follows Keep a Changelog format
-   - Check if `LICENSE` file exists with proper copyright
-   - Check if `.gitignore` exists
-   - For web apps: Check if `index.html` has version string
+   - Check if `CHANGELOG.md` exists and follows Keep a Changelog format.
+   - Check if `LICENSE` file exists with proper copyright.
+   - Check if `.gitignore` exists.
+   - **For web apps**:
+     - Check if `index.html` has the required **HTML Comment Header** (Author, Description, App Name, Year).
+     - Check if `index.html` has a version string.
+   - **Automation Check**:
+     - Check if `.agent/workflows/version-update.md` exists (Local Workflow).
+     - Check if `.github/workflows/static.yml` exists if it's a web app.
 
 2. **Identify Missing or Non-Compliant Elements**:
-   - List all missing required files
-   - Identify files that don't follow the workflow standards
-   - Note any version inconsistencies
+   - List all missing required files.
+   - Identify files that don't follow the latest standards (e.g., hardcoded years, missing headers).
+   - Note any version inconsistencies (recommend `v0.0.1 (Beta)` if early stage).
 
-3. **Recommend Changes**:
-   - Provide a clear list of recommended changes to bring the project into compliance
-   - Offer to create missing files
-   - Suggest updates to non-compliant files
-   - **Request user confirmation** before making any changes
+3. **Recommend Changes and Fixes**:
+   - Provide a clear list of recommended changes to bring the project into compliance.
+   - Offer to:
+     - Create missing files.
+     - Update non-compliant files.
+     - **Setup Local Workflows**: Offer to copy the global `version-update.md` to `.agent/workflows/`.
+     - **Add GitHub Actions**: Offer to add `static.yml` for web projects.
+   - **Request user confirmation** before making any changes.
 
 4. **After User Confirms**:
-   - Proceed with creating/updating files as needed
-   - Continue with relevant steps below (skip steps that are already complete)
+   - Proceed with creating/updating files as needed.
+   - Continue with relevant steps below if the project also requires a new repository or initial commit.
 
 ---
 
 ## Steps for New Projects
 
 1. **Initialize Git Repository**:
-   - Run `git init` in the project directory
-   - Create `.gitignore` with common ignore patterns for the project type
+   - Run `git init` in the project directory.
+   - Create `.gitignore` with common ignore patterns for the project type.
    - Include node_modules, build directories, environment files, etc.
 
 2. **Create GitHub Repository**:
