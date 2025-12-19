@@ -54,9 +54,12 @@ This workflow ensures every project starts and maintains the required documentat
    - Include node_modules, build directories, environment files, etc.
 
 2. **Create GitHub Repository**:
+   - **Pre-check Authentication**:
+     - Run `gh auth status` to verify GitHub CLI authentication.
+     - **Fallback Strategy**: If not authenticated, notify the user and use the **Browser Tool** to create the repository and manage settings manually via the GitHub web interface.
    - **Suggest Repository Name**: Based on the project title, suggest a descriptive name (e.g., `my-new-project`).
    - **Request User Confirmation**: Wait for the user to confirm or provide a different repository name before proceeding.
-   - **Create Repository**: Once confirmed, create the new repository on GitHub (via web interface or GitHub CLI).
+   - **Create Repository**: Once confirmed, create the new repository on GitHub (via `gh repo create` or web interface).
    - Note the repository URL for later use.
    - Do not initialize with README, LICENSE, or .gitignore (we'll create these locally).
 
@@ -91,6 +94,10 @@ This workflow ensures every project starts and maintains the required documentat
    - **Ask User**: Check if the project is a static web app and if they want GitHub Pages deployment.
    - **Create Workflow**: If yes, create `.github/workflows/static.yml` for deploying static content to GitHub Pages.
    - Use the standard template from global workflows (`static-pages-deploy.yml`) for deployment.
+   - **Automate Pages Source**:
+     - After creating the workflow, explicitly set the GitHub Pages build source to "GitHub Actions" via API:
+       `gh api -X PATCH repos/:owner/:repo/pages -f build_type=workflow`
+     - **Fallback**: If the API call fails or CLI is not authenticated, use the **Browser Tool** to navigate to `Settings > Pages` and set the source to "GitHub Actions".
 
 7. **Setup Local Workflows**:
    - **Copy Global Version Update**: Copy the global `/version-update.md` to the project's local `.agent/workflows/` directory.

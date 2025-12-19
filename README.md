@@ -1,4 +1,4 @@
-# Google Anti-Gravity Global Workflows (v1.2.0)
+# Google Anti-Gravity Global Workflows (v1.2.1)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
@@ -74,8 +74,9 @@ git push origin main
 - ✅ **Compliance Audit**: Reviews existing projects for required files, headers, and automation.
 - ✅ **Auto-Fix Recommendations**: Offers to create missing files, update headers, and copy local workflows.
 - ✅ Initializes Git repository with `.gitignore`.
-- ✅ Creates GitHub repository with **name confirmation**.
+- ✅ Creates GitHub repository with **name confirmation** and **auth pre-checks**.
 - ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional).
+- ✅ **Automates Pages Source**: Sets Pages build source to GitHub Actions via API.
 - ✅ Sets up **local workspace workflows** by copying global templates.
 - ✅ Generates `README.md`, `CHANGELOG.md`, and `LICENSE` following the latest standards.
 - ✅ Sets up initial version (**v0.0.1 (Beta)**).
@@ -173,7 +174,7 @@ All workflows include GitHub integration:
 
 - **User Confirmation Required**: Agent will always request confirmation before pushing to GitHub.
 - **Conventional Commits**: All commits follow conventional commit format.
-- **Version Tags**: Optional Git tags for releases (e.g., `v1.5.3`).
+- **Robustness**: includes `gh auth status` checks and browser-based fallback strategies.
 
 ---
 
@@ -209,5 +210,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.2.0  
+**Version**: 1.2.1  
 **Maintained by**: Google Anti-Gravity Team
