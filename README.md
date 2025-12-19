@@ -1,4 +1,4 @@
-# Google Anti-Gravity Global Workflows (v1.0.0)
+# Google Anti-Gravity Global Workflows (v1.0.1)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
@@ -276,5 +276,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-16  
-**Version**: 1.0.0  
+**Version**: 1.0.1  
 **Maintained by**: Google Anti-Gravity Team
