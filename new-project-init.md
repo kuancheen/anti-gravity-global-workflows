@@ -53,13 +53,13 @@ This workflow ensures every new project starts with the required documentation f
    - Do not initialize with README, LICENSE, or .gitignore (we'll create these locally).
 
 3. **Create README.md**:
-   - Add project title with initial version (v1.0.0).
+   - Add project title with initial version (v0.0.1 (Beta)).
    - Include project description and purpose.
    - Add installation/setup instructions.
    - Include usage examples.
    - Add features list.
    - Include license information.
-   - Add copyright notice with current year (2025).
+   - Add copyright notice with **current year** (the year the project is initialized).
    - Include contact/contribution information if applicable.
 
 4. **Create CHANGELOG.md**:
@@ -68,14 +68,14 @@ This workflow ensures every new project starts with the required documentation f
    - Add format note: `The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).`.
    - Add initial version entry:
      ```
-     ## [1.0.0] - YYYY-MM-DD
+     ## [0.0.1 (Beta)] - YYYY-MM-DD
      ### Added
      - Initial release
      ```
 
 5. **Create LICENSE**:
    - Choose appropriate license (MIT, Apache 2.0, GPL, etc.).
-   - Add copyright notice with current year (2025).
+   - Add copyright notice with **current year** (the year the project is initialized).
    - Include full license text.
    - Add project/author name.
 
@@ -89,14 +89,20 @@ This workflow ensures every new project starts with the required documentation f
    - This allows the project to have a workspace-specific version update workflow.
 
 8. **Update Project Files**:
-   - **For web apps only**: If `index.html` exists, add version string (e.g., `App Version: v1.0.0`).
-   - Add copyright notice in footer or meta tags (for web apps).
+   - **For web apps only**:
+     - **HTML Comment Header**: Add a comment block at the very top of `index.html` including:
+       - Application Name
+       - Brief description of the application
+       - Author Name
+       - Copyright year
+     - **Version String**: If `index.html` exists, add version string (e.g., `App Version: v0.0.1 (Beta)`).
+     - Add copyright notice in footer or meta tags.
    - Ensure consistent branding across files.
 
 9. **Verify Documentation**:
    - Check that all required files are created (README.md, CHANGELOG.md, LICENSE).
-   - Ensure version numbers are consistent (v1.0.0).
-   - Verify copyright year is correct (2025).
+   - Ensure version numbers are consistent (v0.0.1 (Beta)).
+   - Verify copyright year is correct (current year).
    - Review that all documentation is accurate and complete.
 
 10. **Initial Commit and Push to GitHub**:
