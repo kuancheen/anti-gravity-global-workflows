@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.9.2] - 2025-12-20
+
+### Added
+- Integrated [Hits.sh](https://hits.sh/) view counter badge (style: `flat`) into the default `README.md` template in `/new-project-init`.
+- Added compliance check for the Hits.sh badge in existing project `README.md` files.
+
 ## [1.9.1] - 2025-12-20
 
 ### Removed
