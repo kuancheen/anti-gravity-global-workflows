@@ -142,7 +142,7 @@ This workflow ensures every project starts and maintains the required documentat
                <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/README.md" target="_blank">README</a> | 
                <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/CHANGELOG.md" target="_blank">CHANGELOG</a> | 
                &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a> |
-               <img src="https://hits.sh/github.com/:owner/:repo.svg?view=today-total&style=for-the-badge&label=👁️%20Views&extraCount=0&color=6366f1" alt="Hits">
+               <img src="https://hits.sh/github.com/:owner/:repo.svg?view=today-total&style=flat-square&label=👁️%20Views&extraCount=0&color=6366f1" alt="Hits">
            </p>
        </footer>
        ```
