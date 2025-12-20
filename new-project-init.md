@@ -80,7 +80,7 @@ This workflow ensures every project starts and maintains the required documentat
      - **Version**: `![Version](https://img.shields.io/badge/version-v0.0.1%20(Beta)-blue)`
      - **License**: `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)` (or appropriate for the license chosen)
      - **Semantic Versioning**: `![Semantic Versioning](https://img.shields.io/badge/semver-2.0.0-blue)`
-     - **Views**: `![Views](https://hits.sh/github.com/:owner/:repo.svg?view=today-total&style=flat&label=👁️%20Views&extraCount=0&color=6366f1)`
+     - **Views**: `![Views](https://hits.sh/:owner.github.io/:repo.svg?view=today-total&style=flat&label=👁️%20Views&extraCount=0&color=6366f1)`
      - **Status**: `![Status](https://img.shields.io/badge/status-active-success)` (for active development)
      - **Live Demo (Web Apps Only)**: `![Live Demo](https://img.shields.io/badge/demo-online-green.svg)` linking to the GitHub Pages URL.
    - Include project description and purpose.
@@ -139,12 +139,11 @@ This workflow ensures every project starts and maintains the required documentat
        <footer>
            <p>
                vX.Y.Z | 
-               <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/README.md" target="_blank">README</a> | 
-               <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/CHANGELOG.md" target="_blank">CHANGELOG</a> | 
-               &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a> |
-               <img src="https://hits.sh/github.com/:owner/:repo.svg?view=today-total&style=flat-square&label=👁️%20Views&extraCount=0&color=6366f1" alt="Hits">
-           </p>
-       </footer>
+               <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/README.md" target="_blank">README</a> |                <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/CHANGELOG.md" target="_blank">CHANGELOG</a> | 
+                &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a> |
+                <img src="https://hits.sh/:owner.github.io/:repo.svg?view=today-total&style=flat-square&label=👁️%20Views&extraCount=0&color=6366f1" alt="Hits">
+            </p>
+        </footer>
        ```
        - Replace `:owner`, `:repo`, and `:author` with the correct values.
      - Add copyright notice in footer or meta tags.

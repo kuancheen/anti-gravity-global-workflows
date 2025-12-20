@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.9.3] - 2025-12-20
+
+### Fixed
+- Corrected `hits.sh` badge URL format in `/new-project-init` to use the `:owner.github.io` subdomain format for both `README.md` and `index.html` footers.
+
 ## [1.9.2] - 2025-12-20
 
 ### Added
