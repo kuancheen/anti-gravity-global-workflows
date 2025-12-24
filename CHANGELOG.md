@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.9.4] - 2025-12-24
+
+### Changed
+- Improved GitHub Pages initialization in `/new-project-init` by using a `POST` request instead of `PATCH`. This explicitly creates the Pages site configuration and prevents 404 errors on brand-new repositories.
+
 ## [1.9.3] - 2025-12-20
 
 ### Fixed

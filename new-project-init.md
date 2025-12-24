@@ -113,10 +113,12 @@ This workflow ensures every project starts and maintains the required documentat
    - **Create Workflow**: If yes, create `.github/workflows/static.yml` for deploying static content to GitHub Pages.
    - Use the standard template from global workflows (`static-pages-deploy.yml`) for deployment.
    - **Automate Pages Source**:
-     - After creating the workflow, explicitly set the GitHub Pages build source to "GitHub Actions" via API:
-       `gh api -X PATCH repos/:owner/:repo/pages -f build_type=workflow`
+     - After creating the workflow, explicitly create the GitHub Pages site configuration via POST:
+       ```bash
+       echo '{"build_type":"workflow","source":{"branch":"main","path":"/"}}' | gh api -X POST repos/:owner/:repo/pages --input -
+       ```
      - **Verification**: Run `gh api repos/:owner/:repo/pages` to verify `build_type` is `workflow`.
-     - **Note**: This call may fail if the repository has no commits yet. If it fails, proceed to Step 10 and try again there.
+     - **Note**: This explicitly creates the Pages resource. It may still fail if the repository has no commits yet; if it fails, proceed to Step 10 and try again there.
      - **Fallback**: If the API call fails or CLI is not authenticated, use the **Browser Tool** to navigate to `Settings > Pages` and set the source to "GitHub Actions".
 
 7. **Setup Local Workflows**:
