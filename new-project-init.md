@@ -82,7 +82,11 @@ This workflow ensures every project starts and maintains the required documentat
      - **Semantic Versioning**: `![Semantic Versioning](https://img.shields.io/badge/semver-2.0.0-blue)`
      - **Views**: `![Views](https://hits.sh/:owner.github.io/:repo.svg?view=today-total&style=flat&label=👁️%20Views&extraCount=0&color=6366f1)`
      - **Status**: `![Status](https://img.shields.io/badge/status-active-success)` (for active development)
-     - **Live Demo (Web Apps Only)**: `![Live Demo](https://img.shields.io/badge/demo-online-green.svg)` linking to the GitHub Pages URL.
+     - **Live Demo (Web Apps Only)**: `[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://:owner.github.io/:repo)` linking to the GitHub Pages URL.
+   - Include a guidance line below the badges:
+     ```markdown
+     > You can view the live demo by clicking the badge above or by [visiting this link](https://:owner.github.io/:repo).
+     ```
    - Include project description and purpose.
    - Add installation/setup instructions.
    - Include usage examples.
