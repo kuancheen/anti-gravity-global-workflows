@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.11.0] - 2025-12-24
+
+### Added
+- **Versioned Workflow Filenames**: Global workflows in the repository now include their version number in the filename (e.g., `new-project-init-v1.11.0.md`).
+- This allows users to explicitly specify the version they wish to use via slash commands (e.g., `/new-project-init-v1.11.0`).
+- Automated workflow for renaming these files during version bumps.
+
 ## [1.10.0] - 2025-12-24
 
 ### Changed

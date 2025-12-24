@@ -126,8 +126,9 @@ This workflow ensures every project starts and maintains the required documentat
      - **Fallback**: If the API call fails or CLI is not authenticated, use the **Browser Tool** to navigate to `Settings > Pages` and set the source to "GitHub Actions".
 
 7. **Setup Local Workflows**:
-   - **Copy Global Version Update**: Copy the global `/version-update.md` to the project's local `.agent/workflows/` directory.
-   - This allows the project to have a workspace-specific version update workflow.
+   - **Copy Global Version Update**: Find the latest versioned `/version-update-v*.md` in the global repository and copy it to the project's local `.agent/workflows/` directory.
+   - Rename the local copy to `version-update.md` for consistent slash command usage within the local project.
+   - This allows the project to have a workspace-specific version update workflow that follows the latest global template.
 
 8. **Update Project Files**:
    - **For web apps only**:

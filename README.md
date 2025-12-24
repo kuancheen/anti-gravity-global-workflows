@@ -1,8 +1,8 @@
-# Google Anti-Gravity Global Workflows (v1.10.0)
+# Google Anti-Gravity Global Workflows (v1.11.0)
 
 > Automated workflows for managing Google Anti-Gravity projects with consistency, proper documentation, and version control.
 
-![Version](https://img.shields.io/badge/version-v1.10.0-blue)
+![Version](https://img.shields.io/badge/version-v1.11.0-blue)
 [![Status](https://img.shields.io/badge/status-active-success)](https://github.com/kuancheen/anti-gravity-global-workflows)
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://github.com/kuancheen/anti-gravity-global-workflows)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kuancheen/anti-gravity-global-workflows/blob/main/LICENSE)
@@ -80,6 +80,7 @@ git push origin main
 - ✅ Initializes Git repository with `.gitignore`.
 - ✅ Creates GitHub repository with **name confirmation** and **auth pre-checks**.
 - ✅ Generates GitHub Actions workflow for **GitHub Pages** (optional).
+- ✅ **Versioned Slash Commands**: Workflows are versioned in their filenames (e.g., `/new-project-init-v1.11.0`) to ensure explicit version control.
 - ✅ **Standardized Footer**: Enforces a consistent footer with MD-Viewer documentation links, GitHub profile link, and **Hits.sh view counter**.
 - ✅ **Favicon & Cache Bursting**: Generates relevant favicons and implements cache bursting for internal assets.
 - ✅ **Favicon & Cache Bursting**: Generates relevant favicons and implements cache bursting for internal assets.
@@ -220,5 +221,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Last Updated**: 2025-12-19
-**Version**: 1.10.0  
+**Version**: 1.11.0  
 **Maintained by**: Google Anti-Gravity Team
