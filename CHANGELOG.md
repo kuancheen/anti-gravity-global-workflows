@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.12.0] - 2025-12-28
+
+### Added
+- Extended `/new-project-init` compliance audit and setup to include **Server-Side Templates** (e.g., EJS, Pug), ensuring they meet strict versioning, footer, and cache-busting standards.
+- Updated `/version-update` to explicitly handle version bumps and cache bursting updates in server-side template files.
+
 ## [1.11.0] - 2025-12-24
 
 ### Added

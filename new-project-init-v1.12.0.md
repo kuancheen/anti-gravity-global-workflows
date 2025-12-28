@@ -31,9 +31,18 @@ This workflow ensures every project starts and maintains the required documentat
             -   Links to `README` and `CHANGELOG` via `md-viewer` (e.g., `https://kuancheen.github.io/md-viewer/?...`).
             -   Copyright notice linking to the author's GitHub profile.
             -   **Hits.sh Badge** view counter.
+            -   **Hits.sh Badge** view counter.
+    -   **For Server-Side Apps (e.g., Express/EJS)**:
+        -   Check for `views/` directory or template files (`.ejs`, `.pug`, etc.).
+        -   **Standardized Footer**: Check if layout templates include the standardized footer (Version, Links, Copyright, Hits Badge).
+        -   **Cache Busting**: Check if internal CSS/JS links in templates have version query parameters (`?v=X.Y.Z`).
     -   **Automation Check (Sync with Global)**:
         -   Check if `.agent/workflows/version-update.md` exists. **Verify if it matches the latest global version**.
         -   Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
+    -   **For Server-Side Apps (e.g., Express/EJS)**:
+        -   Check for `views/` directory or template files (`.ejs`, `.pug`, etc.).
+        -   **Standardized Footer**: Check if layout templates include the standardized footer (Version, Links, Copyright, Hits Badge).
+        -   **Cache Busting**: Check if internal CSS/JS links in templates have version query parameters (`?v=X.Y.Z`).
 
 2.  **Identify Missing or Outdated Elements**:
     -   List all missing required files or **missing badges** in README.

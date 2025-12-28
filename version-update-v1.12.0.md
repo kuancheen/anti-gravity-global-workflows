@@ -48,7 +48,12 @@ Automatically run this workflow after:
    - Update the version in any meta tags or headers
    - Skip this step if the project is not a web app
 
-3. **Update CHANGELOG.md**:
+3. **Update Server-Side Templates** (Server-Side Apps Only):
+   - **Update Version String**: Find the version string in your template footers (e.g., `views/partials/footer.ejs`) and increment it.
+   - **Update Cache Busting**: Search for all internal `.css` and `.js` links in your templates (e.g., `views/*.ejs`) and update the `?v=` parameter to the new version.
+     - Example: `href="/style.css?v=1.0.0"` -> `href="/style.css?v=1.1.0"`
+
+4. **Update CHANGELOG.md**:
    - Add a new section at the top for the new version
    - Format: `## [vX.Y.Z] - YYYY-MM-DD`
    - List changes under appropriate categories:
@@ -58,7 +63,7 @@ Automatically run this workflow after:
      - `### Removed` - for removed features
      - `### Security` - for security updates
 
-4. **Update README.md**:
+5. **Update README.md**:
    - Update the version number in the title/header (e.g., `# Project Name (v1.7.1)`)
    - **Update Version Badge**: Update the `![Version]` badge to reflect the new version number.
    - **Update Status Badge (Optional)**:
@@ -67,15 +72,15 @@ Automatically run this workflow after:
    - Update any relevant instructions if the changes affect usage
    - Update screenshots or examples if UI/UX has changed
 
-5. **Check/Update Copyright Year**:
+6. **Check/Update Copyright Year**:
    - Check the current year.
    - **Identify Project Creation Year**: Determine the original year from existing copyright notices in `LICENSE` or `README.md`.
    - If `current_year > project_creation_year`:
-     - Update copyright notices in `LICENSE`, `README.md`, and `index.html`.
+     - Update copyright notices in `LICENSE`, `README.md`, `index.html`, and **Server-Side Templates** (e.g., `.ejs`, `.pug`).
      - Format should be `[Project Creation Year]-[Current Year]` (e.g., `2024-2025`).
    - If `current_year == project_creation_year`, ensure it shows only the creation year.
 
-6. **Verify All Changes**:
+7. **Verify All Changes**:
    - Review all modified files
    - Ensure version numbers are consistent across all files
    - Check that CHANGELOG entries are accurate and complete
