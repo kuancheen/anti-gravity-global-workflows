@@ -184,6 +184,10 @@ This workflow ensures every project starts and maintains the required documentat
 10. **Initial Commit and Push to GitHub**:
     - Add remote: `git remote add origin <repository-url>`.
     - **Final Pages Source Check**: For web apps, try setting the Pages source to "Actions" again via API *now* that the remote is established.
+    - **Update Repository Website**: For web apps, update the repository's "Website" field with the GitHub Pages URL:
+      ```bash
+      gh repo edit :owner/:repo --homepage "https://:owner.github.io/:repo"
+      ```
     - Stage all files: `git add .`.
     - Create initial commit: `git commit -m "chore: initial project setup with documentation"`.
     - **Request user confirmation before pushing**.

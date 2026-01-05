@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.15.0] - 2026-01-06
+
+### Changed
+- Updated `/new-project-init` to automatically set the repository's "Website" field to the GitHub Pages URL after deployment using `gh repo edit`.
+- Rotated all workflow filenames to v1.15.0.
+
 ## [1.14.0] - 2026-01-06
 
 ### Added
