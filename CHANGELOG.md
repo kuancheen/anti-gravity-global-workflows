@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.16.0] - 2026-01-06
+
+### Added
+- Added repository "Website" metadata check to the `/new-project-init` compliance audit for existing projects.
+- Cleaned up duplicated Hits.sh badge audit checks.
+- Rotated all workflow filenames to v1.16.0.
+
 ## [1.15.0] - 2026-01-06
 
 ### Changed

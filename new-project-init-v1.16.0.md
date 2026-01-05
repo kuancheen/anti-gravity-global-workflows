@@ -31,7 +31,8 @@ This workflow ensures every project starts and maintains the required documentat
             -   Links to `README` and `CHANGELOG` via `md-viewer` (e.g., `https://kuancheen.github.io/md-viewer/?...`).
             -   Copyright notice linking to the author's GitHub profile.
             -   **Hits.sh Badge** view counter.
-            -   **Hits.sh Badge** view counter.
+    -   **Repository Metadata**:
+        -   For web apps, check if the repository's "Website" field is set to the GitHub Pages URL.
     -   **For Server-Side Apps (e.g., Express/EJS)**:
         -   Check for `views/` directory or template files (`.ejs`, `.pug`, etc.).
         -   **Standardized Footer**: Check if layout templates include the standardized footer (Version, Links, Copyright, Hits Badge).
@@ -50,6 +51,7 @@ This workflow ensures every project starts and maintains the required documentat
     -   Identify missing or generic **favicons** in web projects.
     -   Identify **inlined assets** that should be moved to separate files.
     -   Identify **missing cache bursting filters** for internal assets.
+    -   Identify **missing or incorrect repository Website link** in GitHub settings.
     -   Identify **outdated local workflows** that should be replaced with the latest versions from the global workspace.
     -   Note any version inconsistencies (recommend `v0.0.1 (Beta)` if early stage).
 
