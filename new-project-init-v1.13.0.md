@@ -36,13 +36,13 @@ This workflow ensures every project starts and maintains the required documentat
         -   Check for `views/` directory or template files (`.ejs`, `.pug`, etc.).
         -   **Standardized Footer**: Check if layout templates include the standardized footer (Version, Links, Copyright, Hits Badge).
         -   **Cache Busting**: Check if internal CSS/JS links in templates have version query parameters (`?v=X.Y.Z`).
+    -   **Development Standards & UI Guidelines**:
+        -   Verify **Zero Pop-up Policy** (no `alert()` or `confirm()`).
+        -   Verify **Context-Aware Feedback** (inline messaging in components).
+        -   Verify **Guided Input Entry** (helpful placeholders).
+        -   Verify **Secure Configuration** (masked sensitive inputs with visibility toggles).
+        -   Verify **Standardized Modal Behavior** ([x] button, backdrop dismiss, ESC key).
     -   **Automation Check (Sync with Global)**:
-        -   Check if `.agent/workflows/version-update.md` exists. **Verify if it matches the latest global version**.
-        -   Check if `.github/workflows/static.yml` exists if it's a web app. **Verify if it matches the latest global template** (`static-pages-deploy.yml`).
-    -   **For Server-Side Apps (e.g., Express/EJS)**:
-        -   Check for `views/` directory or template files (`.ejs`, `.pug`, etc.).
-        -   **Standardized Footer**: Check if layout templates include the standardized footer (Version, Links, Copyright, Hits Badge).
-        -   **Cache Busting**: Check if internal CSS/JS links in templates have version query parameters (`?v=X.Y.Z`).
 
 2.  **Identify Missing or Outdated Elements**:
     -   List all missing required files or **missing badges** in README.
@@ -163,6 +163,16 @@ This workflow ensures every project starts and maintains the required documentat
        ```
        - Replace `:owner`, `:repo`, and `:author` with the correct values.
      - Add copyright notice in footer or meta tags.
+   - **For Server-Side Templates (e.g., EJS, Pug)**:
+     - **Standardized Footer**: Implement the standardized footer structure in your main layout template (e.g., `layout.ejs` or `footer.ejs`).
+     - **Cache Busting**: Append version query parameters to all internal asset links in your templates.
+       - Example: `<link rel="stylesheet" href="/style.css?v=<%= version %>">`
+   - **🛠️ Development Standards & UI Guidelines**:
+     - **Zero Pop-up Policy (In-line Messaging)**: Never use native browser `alert()` or `confirm()` pop-ups. Use themed in-line messaging (Success: Green, Error: Red, Info: Blue).
+     - **Context-Aware Feedback**: Status messages must appear within the specific component or card that triggered the action (e.g., `#config-status`).
+     - **Guided Input Entry (Hints/Placeholders)**: All text inputs must have helpful placeholders providing hints about expected formats (e.g., `AIzaSy...` for keys).
+     - **Secure Configuration (Visibility Toggles)**: Sensitive inputs (API Keys, Client IDs) should be masked by default (`type="password"`) with a side-aligned visibility toggle (👁️/🙈).
+     - **Standardized Modal Behavior**: Modals must have a visible [x] close button, support backdrop dismissal (clicking outside), and keyboard dismissal (ESC key).
    - Ensure consistent branding across files.
 
 9. **Verify Documentation**:

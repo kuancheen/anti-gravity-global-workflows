@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.13.0] - 2026-01-05
+
+### Added
+- Integrated **🛠️ Development Standards & UI Guidelines** into `/new-project-init` compliance audit and setup.
+- Added 5 UX principles: Zero Pop-up Policy, Context-Aware Feedback, Guided Input Entry (Hints/Placeholders), Secure Configuration (Visibility Toggles), and Standardized Modal Behavior.
+- Cleaned up duplicated server-side audit checks in `/new-project-init`.
+
 ## [1.12.0] - 2025-12-28
 
 ### Added
