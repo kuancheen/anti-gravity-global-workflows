@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.17.0] - 2026-01-06
+
+### Changed
+- Updated `/summarize-progress` to automatically create or update a `project-status-report.md` file in the project root.
+- Rotated all workflow filenames to v1.17.0.
+
 ## [1.16.0] - 2026-01-06
 
 ### Added

@@ -36,7 +36,7 @@ When you need to:
    - Note any outstanding issues or bugs
 
 4. **Generate Status Report**:
-   Create a comprehensive markdown report with the following sections:
+   Create a comprehensive markdown report (to be displayed and saved to `project-status-report.md` in the project root) with the following sections:
    
    ```markdown
    # Project Status Report
@@ -79,10 +79,11 @@ When you need to:
    [Any other relevant information for continuity]
    ```
 
-5. **Present Report**:
-   - Display the formatted report to the user
-   - Offer to save it as a file if needed
-   - Suggest any additional context that might be helpful
+5. **Present and Persist Report**:
+   - Display the formatted report to the user.
+   - **Create or Update File**: Automatically create or update `project-status-report.md` in the project root with the generated content.
+   - Offer to commit the changes if applicable.
+   - Suggest any additional context that might be helpful.
 
 ## Notes
 
