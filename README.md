@@ -83,7 +83,6 @@ git push origin main
 - ✅ **Versioned Slash Commands**: Workflows are versioned in their filenames (e.g., `/new-project-init-v1.11.0`) to ensure explicit version control.
 - ✅ **Standardized Footer**: Enforces a consistent footer with MD-Viewer documentation links, GitHub profile link, and **Hits.sh view counter**.
 - ✅ **Favicon & Cache Bursting**: Generates relevant favicons and implements cache bursting for internal assets.
-- ✅ **Favicon & Cache Bursting**: Generates relevant favicons and implements cache bursting for internal assets.
 - ✅ **Asset Separation**: Enforces moving inlined CSS and JS into separate `style.css` and `main.js` files.
 - ✅ **Automates Pages Source**: Sets Pages build source to GitHub Actions via API.
 - ✅ Sets up **local workspace workflows** by copying global templates.
@@ -198,11 +197,11 @@ All workflows include GitHub integration:
 
 ---
 
-## 🛠️ Customization
-
-These workflows can be modified by editing the `.md` files in this directory:
-- `new-project-init.md`
-- `version-update.md`
+These workflows can be modified by editing the versioned `.md` files in this directory:
+- `new-project-init-v*.md`
+- `version-update-v*.md`
+- `summarize-progress-v*.md`
+- `catch-up-v*.md`
 
 ---
 
