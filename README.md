@@ -118,6 +118,19 @@ git push origin main
 
 ---
 
+### 3. Session Management (`/summarize-progress`, `/catch-up`)
+
+#### Summarize Progress (`/summarize-progress`)
+- **Purpose**: Generates a comprehensive status report for cross-platform AI context sharing.
+- **Persistence**: Automatically creates or updates `project-status-report.md` in the project root to store the result.
+- **Content**: Includes project overview, progress summary (Completed, In Progress, Pending, Blocked), recent changes, key decisions, and next steps.
+
+#### Catch Up (`/catch-up`)
+- **Purpose**: Instantly syncs the agent's state by reading the latest project artifacts.
+- **Mechanism**: Reads `task.md`, `walkthrough.md`, and `implementation_plan.md` from the project's brain folder to quickly restore context after a session break or platform switch.
+
+---
+
 ## 🎯 Semantic Versioning Guide
 
 All projects follow semantic versioning: `MAJOR.MINOR.PATCH`
