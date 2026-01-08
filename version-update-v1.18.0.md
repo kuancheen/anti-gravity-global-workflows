@@ -75,10 +75,22 @@ Automatically run this workflow after:
 6. **Check/Update Copyright Year**:
    - Check the current year.
    - **Identify Project Creation Year**: Determine the original year from existing copyright notices in `LICENSE` or `README.md`.
-   - If `current_year > project_creation_year`:
-     - Update copyright notices in `LICENSE`, `README.md`, `index.html`, and **Server-Side Templates** (e.g., `.ejs`, `.pug`).
-     - Format should be `[Project Creation Year]-[Current Year]` (e.g., `2024-2025`).
-   - If `current_year == project_creation_year`, ensure it shows only the creation year.
+   - **Check ALL locations** for copyright notices:
+     - `LICENSE` file (main copyright notice)
+     - `README.md` (footer or copyright section)
+     - `index.html` (HTML comment header at the top AND footer element)
+     - Server-side templates (e.g., `views/partials/footer.ejs`, `views/layout.pug`)
+   - **Year Format Logic**:
+     - If `current_year == project_creation_year`: Use single year format (e.g., `2026`)
+     - If `current_year > project_creation_year`: Use year range format (e.g., `2024-2026`)
+       - Start year = project initialization year
+       - End year = current year
+   - **Examples**:
+     - `LICENSE`: `Copyright (c) 2024-2026 Author Name`
+     - `README.md`: `**Copyright (c) 2024-2026 Author Name**`
+     - `index.html` header: `<!-- Copyright (c) 2024-2026 Author Name -->`
+     - `index.html` footer: `&copy; <span id="year">2024-2026</span> <a href="...">Author</a>`
+     - Server templates: `<%= "2024-2026" %>` or `&copy; 2024-2026`
 
 7. **Verify All Changes**:
    - Review all modified files

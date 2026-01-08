@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.18.0] - 2026-01-08
+
+### Changed
+- Enhanced `/version-update` copyright year update logic with explicit file locations (LICENSE, README, index.html header/footer, server templates) and year range format guidance.
+- Rotated all workflow filenames to v1.18.0.
+
 ## [1.17.1] - 2026-01-06
 
 ### Changed
