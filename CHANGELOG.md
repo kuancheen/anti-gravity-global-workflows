@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [1.19.0] - 2026-01-08
+
+### Changed
+- Aligned `/new-project-init` copyright checks with `v1.18.0` standards (year ranges and multi-location validation).
+- Updated audit logic to identify outdated single-year copyright notices.
+- Rotated all workflow filenames to v1.19.0.
+
 ## [1.18.0] - 2026-01-08
 
 ### Changed

@@ -15,13 +15,13 @@ This workflow ensures every project starts and maintains the required documentat
         -   Project title with version number and **required badges**.
         -   Description and purpose.
         -   Installation/setup instructions.
-        -   License and copyright information.
+        -   License and **Copyright information** (Check for **Year Range** format: `CreationYear-CurrentYear`).
         -   **Hits.sh Badge** view counter (`style=flat`).
     -   Check if `CHANGELOG.md` exists and follows Keep a Changelog format.
-    -   Check if `LICENSE` file exists with proper copyright.
+    -   Check if `LICENSE` file exists with **proper copyright** (Creation year or range).
     -   Check if `.gitignore` exists.
     -   **For web apps**:
-        -   Check if `index.html` has the required **HTML Comment Header** (Author, Description, App Name, Year).
+        -   Check if `index.html` has the required **HTML Comment Header** (Author, Description, App Name, **Copyright Year/Range**).
         -   Check if `index.html` has a version string.
         -   Check for a **favicon** (link tag in `index.html` and existence of the file/data URI).
         -   **Asset Separation**: Check if CSS and JS are inlined in `index.html` or separated into dedicated files (`style.css`, `main.js`).
@@ -29,7 +29,7 @@ This workflow ensures every project starts and maintains the required documentat
         -   **Standardized Footer**: Check if `index.html` contains the standardized footer with:
             -   Version string (e.g., `v1.0.0`).
             -   Links to `README` and `CHANGELOG` via `md-viewer` (e.g., `https://kuancheen.github.io/md-viewer/?...`).
-            -   Copyright notice linking to the author's GitHub profile.
+            -   **Copyright notice** linking to the author's GitHub profile (Verify **Year/Range** matches header).
             -   **Hits.sh Badge** view counter.
     -   **Repository Metadata**:
         -   For web apps, check if the repository's "Website" field is set to the GitHub Pages URL.
@@ -47,7 +47,7 @@ This workflow ensures every project starts and maintains the required documentat
 
 2.  **Identify Missing or Outdated Elements**:
     -   List all missing required files or **missing badges** in README.
-    -   Identify files that don't follow the latest standards (e.g., hardcoded years, missing headers).
+    -   Identify files that don't follow the latest standards (e.g., outdated single years that should be ranges, missing headers).
     -   Identify missing or generic **favicons** in web projects.
     -   Identify **inlined assets** that should be moved to separate files.
     -   Identify **missing cache bursting filters** for internal assets.
@@ -149,7 +149,7 @@ This workflow ensures every project starts and maintains the required documentat
        - Application Name
        - Brief description of the application
        - Author Name
-       - Copyright year
+        -   **Copyright Year/Range** (e.g., `2024-2026`)
      - **Version String**: If `index.html` exists, add version string (e.g., `App Version: v0.0.1 (Beta)`).
      - **Favicon**: Add a relevant SVG favicon. Use a data URI for simplicity or create a separate `favicon.svg` file and link it in `index.html`.
      - **Standardized Footer**: Add a footer to `index.html` with the following format:
@@ -157,8 +157,7 @@ This workflow ensures every project starts and maintains the required documentat
        <footer>
            <p>
                vX.Y.Z | 
-               <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/README.md" target="_blank">README</a> |                <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/CHANGELOG.md" target="_blank">CHANGELOG</a> | 
-                &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a> |
+               <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/README.md" target="_blank">README</a> |                <a href="https://kuancheen.github.io/md-viewer/?https://github.com/:owner/:repo/blob/main/CHANGELOG.md" target="_blank">CHANGELOG</a> |                 &copy; <span id="year">YYYY</span> <a href="https://github.com/:owner" target="_blank">:author</a> |
                 <img src="https://hits.sh/:owner.github.io/:repo.svg?view=today-total&style=flat-square&label=👁️%20Views&extraCount=0&color=6366f1" alt="Hits">
             </p>
         </footer>
@@ -180,7 +179,7 @@ This workflow ensures every project starts and maintains the required documentat
 9. **Verify Documentation**:
    - Check that all required files and badges are created.
    - Ensure version numbers are consistent (v0.0.1 (Beta)).
-   - Verify copyright year is correct (current year).
+    -   Verify **Copyright Year/Range** is correct across all locations.
    - Review that all documentation is accurate and complete.
 
 10. **Initial Commit and Push to GitHub**:
